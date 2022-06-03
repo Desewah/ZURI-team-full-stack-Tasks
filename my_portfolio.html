@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio_styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+        }
+
+
+        .topnav a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            padding-right: 50px;
+        }
+
+        .topnav a:link {
+            color: #ff0000;
+        }
+
+        /* visited link */
+        .topnav a:visited {
+            color: #008000;
+
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: deeppink;
+        }
+
+        .topnav a.active {
+            background-color: grey;
+            color: #0000ff;
+        }
+
+        .topnav a.highlight:hover {
+            color: #8b008b;
+            font-size: 22px;
+        }
+
+        #beau {
+            float: left;
+            padding-left: 50px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- main banner -->
+
+    <div class="hero-image">
+        <nav>
+            <div class="topnav">
+                <a href="#signin">Sign In</a>
+                <a href="#registration">Registration</a>
+                <button id="bun"><a class="highlight" href="#contact">Contact</a></button>
+                <a href="#about">About</a>
+                <a class="active" href="#home">Home</a>
+                <a class="#desewah" id="beau">Moyofade</a>
+            </div>
+        </nav>
+
+        <div class="hero-text">
+            <h1>I am Moyofade</h1>
+            <p id="hero_text">I'm a Software and web developer</p>
+            <button>Let's build webpages</button>
+        </div>
+    </div>
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 title="Meet the lady behind the pictures." id="text">About Me</h1>
+            <div class="row mt-4">
+
+                <div class="col-lg-4">
+                    <img src="images/hero_images.jpg" class="imageAboutPage" alt="codes" style="width: 100%;">
+                    <div id="col-md-6" class="col-lg-4">
+                        <ul>
+                            <strong>
+                                <li>Name
+                            </strong> : Okeowo Moyofade </li>
+                            <strong>
+                                <li>Age
+                            </strong> : 17 yrs</li>
+                            <strong>
+                                <strong>
+                                    <li>Date of Birth </li> : 27th June, 2004
+                                </strong>
+                                <li>Occupation
+                            </strong> : Full Stack Developer </li>
+                            <strong>
+                                <li>Hobbies</li>
+                                <ol>
+                                    <li>Writing codes</li>
+                                    <li> Studying. </li>
+                                    <li> Reading. </li>
+                                    <li> During leisure, I enjoy researching about things that are important, swimming,
+                                        taking strolls and sleeping.
+                                    </li>
+                                </ol>
+                            </strong>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="col-md-7">
+        <strong>
+            <p>
+                Hi, I am a Full Stack Web Developer, I write pixel perfect and interactive websites, I code
+                as if the person who ends up maintaning my code will be a person who knows where I live. I enjoy finding
+                solutions to problems, trying to look for ways that things could be done more efficiently and this is
+                always evident in my codes.
+            </p>
+        </strong>
+        <p> I started my full stack development career in 2022 due to the ASUU strike, I was learning through resources
+            from freecodecamp, w3schools, I was also auditing some courses on EDX. I was going through my phone
+            specifically Google when I came across d Zuri team scholarship cohort form, I
+            decided to apply and days after,I got a mail that I had been accepted as one of the students and since then
+            I've been growing. I believe that not only do I have to be hardworking, I also have to be smart
+            and be dedicated to seeing things properly because no opportunity should be thrown away. </p>
+
+        <h2>Talk is cheap, Let's take a look at some of the <a class="highlight" href="https://github.com/Desewah"
+                target="_blank">projects</a> I've been
+            able to
+            work on since then .</h2>
+        <em>
+            <p>Let's journey together.</p>
+        </em>
+    </div>
+    <div class="container" id="contact">
+        <div style="text-align:center;">
+            <em>
+                <h2> Contact </h2>
+            </em>
+        </div>
+        <div class="row">
+            <div class="column">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="me@domail.com.." required>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="I am interested in.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="column">
+                <img src="images/contactus.jpg" style="width:100%" alt="Contact Us">
+            </div>
+        </div>
+
+    </div>
+    <div class="container" id="registration">
+        <div style="text-align:center;">
+            <h2>Registration</h2>
+            <em>
+                <p>Let's start our journey together</p>
+            </em>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/register.jpg" style="width:100%" alt="Registration">
+            </div>
+            <div class="column">
+                <form action="">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone number..." required>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="neither">Prefer not to say</option>
+                    </select>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    <label for="state">State/Province</label>
+                    <input type="text" id="state" name="state" placeholder="Lagos" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="me@domain.com" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirm" required>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <h2>Sign In</h2>
+
+        </div>
+        <form action="" method="post">
+            <div class="imgcontainer">
+                <img src="images/signin.jpg" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="colum" id="signin">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="me@domain.com" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Sign In</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#"> Forgot password?</a></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+<div class="footer">
+    <em>
+        <h2> Thank you for developing with me. </h2>
+    </em>
+</div>
+
+</html>
