@@ -224,6 +224,7 @@ img.avatar {
 /* Add padding to containers */
 .container {
   padding: 16px;
+  background-color: var();
 }
 
 /* The "Forgot password" text */
