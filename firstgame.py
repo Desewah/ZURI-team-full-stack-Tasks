@@ -67,4 +67,5 @@ while True:
     else:
         print("Welcome back!!")
 
-print("Bye\nThanks for Playing")
+print("Bye,", name)
+print("Thanks for Playing!!")
